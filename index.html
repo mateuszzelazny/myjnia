@@ -17,32 +17,33 @@
         <article>
             <h2>Oblicz koszt usługi</h2>
             <form action="" method="get">
-                <input type="text" name="imie" id="imie" required>
+                <label>Podaj imie: <input type="text" name="imie" id="imie" required></label>
                 <fieldset>
                     <legend>Usługa</legend>
-                    <label for=""><input type="checkbox" name="usluga" id="usluga"></label>
-                    <label for=""><input type="checkbox" name="usluga" id="usluga"></label>
-                    <label for=""><input type="checkbox" name="usluga" id="usluga"></label>
-                    <label for=""><input type="checkbox" name="usluga" id="usluga"></label>
+                    <label for="">Mycie zewnętrzne 30zł<input type="checkbox" name="usluga" id="usluga" value="1" checked disabled></label>
+                    <label for="">Suszenie 10zł<input type="checkbox" name="usluga" id="usluga" value="2"></label>
+                    <label for="">Woskowanie 15zł<input type="checkbox" name="usluga" id="usluga" value="3"></label>
+                    <label for="">Odkurzanie 10zł<input type="checkbox" name="usluga" id="usluga" value="4"></label>
                 </fieldset>
                 <fieldset>
                     <legend>Rodzaj pojazdu</legend>
-                    <select name="" id="">
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                    <select name="rozmiar" id="">
+                        <option value="m">Mały</option>
+                        <option value="s">Średni (+10%)</option>
+                        <option value="v">Van (+20%)</option>
+                        <option value="b">Bus (+45%)</option>
                     </select>
                 </fieldset>
                 <fieldset>
                     <legend>Karta stałego klienta</legend>
-                    <label for=""><input type="radio" name="" id=""></label>
-                    <label for=""><input type="radio" name="" id=""></label>
-                    <label for=""><input type="radio" name="" id=""></label>
+                    <label for="">Brak<input type="radio" name="karta" value="1" id="" checked></label>
+                    <label for="">Srebrna (-5%)<input type="radio" name="karta" value="2" id=""></label>
+                    <label for="">Złota (-15%)<input type="radio" name="karta" value="3" id=""></label>
                 </fieldset>
-                <input type="reset" value=""><input type="submit" value="">
+                <input type="reset" value="Wyczyść"><input type="submit" value="Oblicz">
             </form>
-            <span></span>
+            <img src="assets/photos/hand.jpg" alt="">
+            <span>Koszt usługi:</span>
         </article>
         <aside>
             <h3>Rezerwacja na godzinę</h3>

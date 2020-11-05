@@ -1,0 +1,58 @@
+$pcol :  hsl(240, 50%, 50%);
+$scol : hsl(240, 50%, 90%);
+$tcol : hsl(0, 100%, 50%);
+
+$border : 1px solid $pcol;
+body{
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        max-width: 1000px;
+        margin:0 auto;
+        header{
+            border-top: $border;
+            border-bottom: $border;
+            padding: 1em 0;
+            display: flex;
+            justify-content: space-between;
+            h1{
+                color:$pcol;
+            }
+            nav{
+                ul{
+                    list-style-type: none;
+                    height:100%;
+                    display:flex;
+                    align-items: center;
+                    li{
+                        margin: 0 0 0 50px;
+                        a{
+                            text-decoration: none;
+                            color:$pcol;
+                            background: $scol;
+                            padding: 1em 2em;
+                            border-radius: 10px ;
+                            display: block;
+                        }
+                        a.active{
+                            color:$scol;
+                            background: $pcol;
+                        }
+                    }
+                }
+            }
+        }
+        articel{
+
+        }
+        aside{
+
+        }
+        footer{
+            border:$border;
+            border-radius: 20px;
+        }
+    }
+}

@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cennik</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>Myjnia ręczna Błysk</h1>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="cennik.html">Cennik</a>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="active" href="cennik.html">Cennik</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <article>
             <h2>Oblicz koszt usługi</h2>
             <form action="" method="get">
-                <label>Podaj imie: <input type="text" name="imie" id="imie" required placeholder="wpisz swoje imie"></label>
+                <label>Podaj imie: <input type="text" name="imie" id="imie" required
+                        placeholder="wpisz swoje imie"></label>
                 <fieldset>
                     <legend>Usługa</legend>
-                    <label for="">Mycie zewnętrzne 30zł<input type="checkbox" name="usluga" id="usluga" value="1" checked disabled></label>
+                    <label for="">Mycie zewnętrzne 30zł<input type="checkbox" name="usluga" id="usluga" value="1"
+                            checked disabled></label>
                     <label for="">Suszenie 10zł<input type="checkbox" name="usluga" id="usluga" value="2"></label>
                     <label for="">Woskowanie 15zł<input type="checkbox" name="usluga" id="usluga" value="3"></label>
                     <label for="">Odkurzanie 10zł<input type="checkbox" name="usluga" id="usluga" value="4"></label>
@@ -47,11 +58,13 @@
         </article>
         <aside>
             <h3>Rezerwacja na godzinę</h3>
-            <p>Rezerwacja na godzinę - rezerwuj termin mycia samochodu. Masz mało czasu? Nie lubisz czekać? Zarezerwuj mycie pojazdu na konkretną godzinę</p>
+            <p>Rezerwacja na godzinę - rezerwuj termin mycia samochodu. Masz mało czasu? Nie lubisz czekać? Zarezerwuj
+                mycie pojazdu na konkretną godzinę</p>
         </aside>
         <footer>
             <p>&copy;Mateusz Żelazny 2P</p>
         </footer>
     </div>
 </body>
+
 </html>

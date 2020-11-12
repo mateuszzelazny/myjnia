@@ -1,0 +1,103 @@
+Przygotuj stronę internetową jak na zrzutach.
+Nazwij ją cennik.html
+Style strony zawarte są w pliku main.css umieszczonym w katalogu css.
+Strona powinna zawierać informacje o:
+- autorze strony
+- tytuły stron
+- dołączone pliki ze stylami
+
+HTML
+
+Zawartość strony umieść w kontenerze.
+strona skłądaa się z 4 głównych sekcji (użyj odpowiednich elementów HTML5) umieszczonych w głównym kontenerze.
+W ciele dokumentu, w nagłówku pierwszego stopnia umieść tytuł strony: "Myjnia ręczna Błysk" (zachowaj wielkość liter w pliku HTML!!!) obok umieść odpowiednią strukturę menu z odnośnikami do podstron (index.html i cennik.html) z odpowiednim tekstem.
+W prawej części witryny umieść w nagłówku trzeciego stopnia tekst:
+"Rezerwacja na godzinę"
+W akapicie umieść tekst: "Rezerwacja na godzinę - rezerwuj termin mycia samochodu. Masz mało czasu? Nie lubisz czekać? Zarezerwuj mycie pojazdu na konkretną godzinę"
+W stopce strony w akapicie umieść Twoje imię, nazwisko i klasę.
+
+W pliku cennik.html w części głównej umieść w nagłówku drugiego stopnia tekst "Oblicz koszt usługi" oraz formularz wg wzoru (użyj odpowiednich elementów formularza).
+
+Pola formularza mają powiązane z nimi etykiety.
+Pole gdzie wprowadzane jest imię jest polem wymaganym (musi mieć wprowadzoną wartość) posiada także podpowiedź: "wpisz swoje imię", która znika gdy pole jest aktywne
+Pierwsze pole z grupy usług jest polem domyślnie wybranym i nie można go edytować, pola w tej grupie są polami wielokrotnego wyboru
+Lista rozwijalna zawiera następujące wartości:
+    - Mały
+    - Średni (+10%)
+    - Van (+20%)
+    - Bus (+45%)
+Pole z etykietą Brak w grupie Karta stałego klienta jest domyślnie zaznaczone, pola w tej grupie to pola pojedyńczego wyboru
+Przyciski mają standardowe działanie - czyszczenia i wysłania formularza
+
+W odpowiednim elemencie umieść zdjęcie hand_m.jpg z tekstem alternatywnym: mycie ręczne
+
+CSS
+
+Wykorzystując znane ci sposoby rozmieść elementy jak na zrzutach.
+Kolory użyte w dokumencie:
+hsl(240, 50%, 50%)
+hsl(240, 50%, 90%)
+hsl(0, 100%, 50%)
+
+Zmień czcionkę w dokumencie na bezszeryfową (Tahoma, Arial, Verdana lub dowolna bezszeryfowa)
+
+Kontener w którym umieszczona jest zawartość strony ma szerokość nie większą niż 1000px i jest wyśrodkowany w oknie przeglądarki
+
+Pierwszy blok strony
+- wysokość 100px
+- margines górny i dolny 1em
+- obramowanie górne i dolne: linia ciągła o szerokości 1px w kolorze hsl(240, 50%, 50%)
+
+Tytuł w pierwszym bloku strony:
+- szerokość elemntu 60%
+- tekst wyśrodkowany
+- tytuł kolor napisu hsl(240, 50%, 50%)
+- litery zmienione na kapitaliki
+- odległość między wyrazami: 0.3em
+
+Tekst "Błysk"
+- wielkie litery
+- rozmiar czcionki o 30% większy od rozmiaru czcionka podstawowej
+- odległości między literami - 30% wielkości czcionki
+
+Menu:
+- szerokość 30%
+- kolory tła i czcionki jak na zrzutach
+
+Elementy menu:
+- szerokość elemnentów menu 8em
+- margines wewnętrzny i wartość zaokrąglenia narożników elementów menu 80% czcionki podstawowej
+- usunięte podkreślenie tekstu
+- tekst wyśrodkowany
+- kolory zmieniają się po najechaniu myszą, 
+- element reprezentujący aktualną stronę ma kolor tekstu: hsl(240, 50%, 90%), kolor tła: hsl(240, 50%, 50%)
+
+Elementy w środkowej części strony (drugi i trzeci blok)
+- umieszczone obok siebie
+- wewnętrzny margines i zaokrąglenie narożników równe wielkości czcionki bazowej
+- cień rozmyty na 5px w kolorze hsl(240, 50%, 50%)
+- kolor tła hsl(240, 50%, 90%)
+
+Drugi blok:
+- szerokość 60%
+- element zawierający tekst - odstępy między wierszami równe dwukrotnej wielkości czcionki bazowej
+- obrazek myjnia_m.jpg w rzeczywistych rozmiarach
+
+Formularz 
+- szerokość 55%
+- elemnty grupujące kontrolki formularza mają wewnętrzne marginesy równe 50% czcionki bazowej, margines dolny równy 30% czcionki bazowej
+- etykiety posiadają margines 0.3em
+- szerokości przycisków równe sześciokrotności czcionki bazowej
+- margines wewnętrzny przycisków 50% czcionki bazowej
+
+Element wyświetlający koszt usługi
+- kolor czcionki hsl(0, 100%, 50%)
+- rozmiar czcionki 150% czcionki bazowej
+
+Stopka dokumentu
+- wysokość 100px
+- obramowanie: linia ciągła o szerokości 1px w kolorze hsl(240, 50%, 50%), zaokrąglenie narożników wielkości równej rozmiarowi czcionki bazowej
+- tekst wyśrodkowany w pionie i poziomie
+- tekst zawierający imię i nazwisko (bez klasy!) odstępy między literami 0.4em, czcionka pogrubiona, kolor hsl(0, 100%, 50%)
+
+RESZTA FORMATOWANIA ZGODNA ZE ZRZUTAMI EKRANU DOŁĄCZONYMI DO ZADANIA

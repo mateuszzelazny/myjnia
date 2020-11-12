@@ -1,17 +1,62 @@
 body * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Tahoma, Arial, Verdana;
 }
 
 body .container {
   max-width: 1000px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body .container header {
   border-top: 1px solid #4040bf;
   border-bottom: 1px solid #4040bf;
+  height: 100px;
   padding: 1em 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 1em 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .container header h1 {
+  color: #4040bf;
+  width: 60%;
+  text-align: center;
+  font-variant: small-caps;
+  letter-spacing: .3em;
+}
+
+body .container header h1 span {
+  font-variant: normal;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: .3em;
+}
+
+body .container header nav {
+  width: 30%;
+}
+
+body .container header nav ul {
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,41 +65,115 @@ body .container header {
           justify-content: space-between;
 }
 
-body .container header h1 {
-  color: #4040bf;
-}
-
-body .container header nav ul {
-  list-style-type: none;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .container header nav ul li {
-  margin: 0 0 0 50px;
-}
-
 body .container header nav ul li a {
   text-decoration: none;
   color: #4040bf;
   background: #d9d9f2;
-  padding: 1em 2em;
-  border-radius: 10px;
+  border-radius: .8em;
   display: block;
+  width: 8em;
+  padding: .8em;
+  text-align: center;
 }
 
+body .container header nav ul li a:hover,
 body .container header nav ul li a.active {
   color: #d9d9f2;
   background: #4040bf;
 }
 
+body .container article {
+  padding: 1em;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 5px #4040bf;
+          box-shadow: 0 0 5px #4040bf;
+  background: #d9d9f2;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  margin: 0 0 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container article h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 0 0 .5em 0;
+  text-align: center;
+}
+
+body .container article form {
+  width: 55%;
+}
+
+body .container article form fieldset {
+  padding: .5rem;
+  margin: 0 0 .3rem 0;
+}
+
+body .container article form fieldset label {
+  margin: .3em;
+}
+
+body .container article form input[type="reset"],
+body .container article form input[type="submit"] {
+  padding: .5rem;
+}
+
+body .container article figure {
+  margin: auto 0;
+}
+
+body .container article span {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: red;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+body .container aside {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  padding: 1em;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 5px #4040bf;
+          box-shadow: 0 0 5px #4040bf;
+  background: #d9d9f2;
+  margin: 0 0 1em 0;
+}
+
+body .container aside h3 {
+  text-align: center;
+  margin: 0 0 .5em 0;
+}
+
 body .container footer {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   border: 1px solid #4040bf;
-  border-radius: 20px;
+  border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+
+body .container footer p span {
+  letter-spacing: .4em;
+  font-weight: bold;
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
